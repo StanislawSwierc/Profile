@@ -1,0 +1,6 @@
+"3.3 (created: 2011/11/13 17:32:12)
+
+noremap <BS> <Nop>
+source! "C:\\Users\\v-stansw\\_vimperatorrc.local"
+
+" vim: set ft=vimperator:
