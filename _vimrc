@@ -88,6 +88,7 @@ nnoremap <Leader>. :cd %:p:h<CR>:pwd<CR>
 "-------------------------------------------------------------------------------
 " Plugins
 "-------------------------------------------------------------------------------
+filetype plugin on
 " Kwbd plugin which closes buffer but leaves the window open
 nnoremap <silent> <Leader>bc :Kwbd<CR>
 cnoreabbrev bc Kwbd
@@ -154,3 +155,14 @@ nnoremap ge ]s
 "-------------------------------------------------------------------------------
 inoremap <C-Space> <C-n>
 
+"-------------------------------------------------------------------------------
+" LaTeX-Suite
+"-------------------------------------------------------------------------------
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='pdf, aux'
+
+
+"-------------------------------------------------------------------------------
+" FileType indentation
+"-------------------------------------------------------------------------------
+autocmd FileType tex setlocal softtabstop=2 shiftwidth=2 tabstop=2
