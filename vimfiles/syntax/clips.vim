@@ -21,7 +21,7 @@ syn match   clipsModuleSpecifier  /[^<[:space:]"()$|~;&]\+::[^<[:space:]"()$|~;&
 syn match   clipsSpecial1         /</
 syn match   clipsSpecial2         /\(<-\|=>\)/
 syn match   clipsSpecial3         /\(|\|&\|\~\):\=/
-syn region  clipsTextString       start=+"+ skip=+\\"+ end=+"+ contains=clipsIOFormat
+syn region  clipsTextString       start=+"+ skip=+\\.+ end=+"+ contains=clipsIOFormat
 syn match   clipsIOSpecial     	  /"\(a\|r\|r+\|wb\=\)"/
 syn region  clipsRegion1          start="(" end=")" contains=ALL 
 syn region  clipsRegion2          matchgroup=clipsConditional start="(\s*\(if\|switch\)\>" 
