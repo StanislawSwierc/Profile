@@ -1,7 +1,12 @@
-mklink /D %HOME%\vimfiles %HOME%\.home.git\vimfiles
+set USERPROFILEREPO=%USERPROFILE%\.profile
 
-mklink %HOME%\_viemurc %HOME%\.home.git\_viemurc
-mklink %HOME%\_vimperatorrc %HOME%\.home.git\_vimperatorrc
-mklink %HOME%\_vimrc %HOME%\.home.git\_vimrc
-mklink %HOME%\_vsvimrc %HOME%\.home.git\_vsvimrc
-mklink %HOME%\.latexmkrc %HOME%\.home.git\.latexmkrc
+mklink /D %USERPROFILE%\vimfiles %USERPROFILEREPO%\vimfiles
+mklink /D %USERPROFILE%\AppData\Roaming\VirtuaWin %USERPROFILEREPO%\\AppData\Roaming\VirtuaWin
+
+mklink %USERPROFILE%\_cmdrc.cmd %USERPROFILEREPO%\_cmdrc.cmd
+mklink %USERPROFILE%\_viemurc %USERPROFILEREPO%\_viemurc
+mklink %USERPROFILE%\_vimperatorrc %USERPROFILEREPO%\_vimperatorrc
+mklink %USERPROFILE%\_vimrc %USERPROFILEREPO%\_vimrc
+mklink %USERPROFILE%\_vsvimrc %USERPROFILEREPO%\_vsvimrc
+mklink %USERPROFILE%\.latexmkrc %USERPROFILEREPO%\.latexmkrc
+
