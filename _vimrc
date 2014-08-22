@@ -1,7 +1,4 @@
-﻿" Pathogen initialization
-execute pathogen#infect()
-
-set tabstop=4
+﻿set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -165,3 +162,49 @@ let g:Tex_MultipleCompileFormats='pdf, aux'
 " FileType indentation
 "-------------------------------------------------------------------------------
 autocmd FileType tex setlocal softtabstop=2 shiftwidth=2 tabstop=2
+
+
+"-------------------------------------------------------------------------------
+" Vundle
+"-------------------------------------------------------------------------------
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/vimfiles/bundle/Vundle.vim/
+let path='~/vimfiles/bundle'
+call vundle#begin(path)
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" Information about different formats supported can be found here:
+"https://github.com/gmarik/Vundle.vim#quick-start
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+"Plugin 'honza/vim-snippets'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"-------------------------------------------------------------------------------
+" Plugins configuration
+"-------------------------------------------------------------------------------
+" plasticboy/vim-markdown
+" Disable folding at startup
+let g:vim_markdown_folding_disabled=1
