@@ -15,3 +15,8 @@ mklink "%USERPROFILE%\Documents\Visual Studio 2013\Settings\_vsvimrc" %USERPROFI
 mkdir "%USERPROFILE%\Documents\Visual Studio 14\Settings"
 mklink "%USERPROFILE%\Documents\Visual Studio 14\Settings\_vsvimrc" %USERPROFILEREPO%\_vsvimrc_14.0.vim
 
+
+mkdir "%USERPROFILE%\Documents\WindowsPowerShell"
+mklink "%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1" "%USERPROFILEREPO%\psfiles\Profiles\Microsoft.PowerShell_profile.ps1"
+mklink /D %USERPROFILE%\psfiles %USERPROFILEREPO%\psfiles
+
