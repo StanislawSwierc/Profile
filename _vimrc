@@ -58,6 +58,10 @@ set nowrap
 " Wrap long lines at a whitespace character
 set linebreak
 
+set listchars=tab:\ ,trail:,extends:>,precedes:<
+set list
+nmap <leader>l :set list!<CR>
+
 "-------------------------------------------------------------------------------
 " Search
 "-------------------------------------------------------------------------------
