@@ -58,7 +58,14 @@ set nowrap
 " Wrap long lines at a whitespace character
 set linebreak
 
-set listchars=tab:\ ,trail:,extends:>,precedes:<
+"-------------------------------------------------------------------------------
+" Listchars
+"-------------------------------------------------------------------------------
+if has("gui_running")
+    set listchars=tab:\ ,trail:,extends:>,precedes:<
+else
+    set listchars=tab:Ãÿ,trail:°,extends:>,precedes:<
+endif
 set list
 nmap <leader>l :set list!<CR>
 
