@@ -1,0 +1,26 @@
+# You can include this file in the main .gitconfig file using the following entry
+# [include]
+#    path = ~/.profile/.gitconfig
+[core]
+	safecrlf = true
+[push]
+	default = simple
+[user]
+	name = Stanislaw Swierc
+	email = stansw@microsoft.com
+[merge]
+    tool = vs14
+[mergetool]
+    prompt = true
+[mergetool "vs14"]
+   cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+   keepbackup = false
+   trustexistcode = true
+[mergetool "vs12"]
+   cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 12.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+   keepbackup = false
+   trustexistcode = true
+[credential]
+	helper = !'C:\\Users\\stansw\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
+[alias]
+	graph = log --graph --oneline --decorate
