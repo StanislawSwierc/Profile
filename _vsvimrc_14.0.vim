@@ -17,6 +17,8 @@ noremap gD :vsc Edit.GoToDeclaration <return>
 noremap gd :vsc Edit.GoToDefinition <return>
 noremap gh :vsc Edit.NavigateTo <return>
 noremap gs :vsc Window.SolutionExplorerSearch <return>
+noremap gu :vsc Edit.FindAllReferences<cr>
+noremap gp :vsc Edit.PeekDefinition<cr>
 
 noremap <C-o> :vsc View.NavigateBackward <return>
 noremap <C-i> :vsc View.NavigateForward <return>
@@ -43,4 +45,16 @@ nnoremap <Leader>bD :vsc Edit.ClearBookmarks<cr>
 nnoremap <Leader>bw :vsc View.BookmarkWindow<cr>
 nnoremap <Leader>bn :vsc Edit.NextBookmark<cr>
 nnoremap <Leader>bN :vsc Edit.PreviousBookmark<cr>
+
+
+"-------------------------------------------------------------------------------
+" Find
+"-------------------------------------------------------------------------------
+nnoremap <Leader>fr :vsc Edit.PreviousBookmark<cr>
+nnoremap <Leader>fn :vsc Edit.GoToFindResults1NextLocation<cr>
+nnoremap <Leader>fN :vsc Edit.GoToFindResults1PrevLocation<cr>
+nnoremap <Leader>fm :vsc Edit.GoToFindResults2NextLocation<cr>
+nnoremap <Leader>fM :vsc Edit.GoToFindResults2PrevLocation<cr>
+
+
 
