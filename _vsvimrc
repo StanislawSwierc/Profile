@@ -2,10 +2,16 @@
 " <C-c>
 " <C-v>
 
+let mapleader = ","
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set autoindent
+
+
+" Make backspace work as expected
+set backspace=indent,eol,start
 
 
 "-------------------------------------------------------------------------------
@@ -13,6 +19,7 @@ set autoindent
 "-------------------------------------------------------------------------------
 " Restore some keyboard shortcuts from scheme "C# 2005"
 noremap <C-f> :vsc Edit.Find <return>
+set number
 
 " Vim style navigation to the man page
 noremap K :vsc Help.F1Help <return>
