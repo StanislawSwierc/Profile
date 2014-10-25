@@ -173,6 +173,7 @@ let g:Tex_MultipleCompileFormats='pdf, aux'
 " FileType indentation
 "-------------------------------------------------------------------------------
 autocmd FileType tex setlocal softtabstop=2 shiftwidth=2 tabstop=2
+autocmd FileType r setlocal softtabstop=2 shiftwidth=2 tabstop=2
 
 
 "-------------------------------------------------------------------------------
