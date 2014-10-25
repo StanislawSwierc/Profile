@@ -199,6 +199,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 "Plugin 'honza/vim-snippets'
 Plugin 'dimasg/vim-mark'
+Plugin 'matlab.vim'
 
 
 " All of your Plugins must be added before the following line
