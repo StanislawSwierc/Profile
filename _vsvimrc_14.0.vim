@@ -7,7 +7,9 @@ noremap <Leader>rm :vsc Refactor.ExtractMethod <return>
 noremap <Leader>rd :vsc Refactor.RemoveParameters <return>
 noremap <Leader>rr :vsc Refactor.Rename <return>
 noremap <Leader>rp :vsc Refactor.ReorderParameters <return>
-noremap <Leader>rw :vsc View.ShowRefactorings <return>
+" Refactor this
+noremap <Leader>rt :vsc View.ShowRefactorings <return>
+noremap <Leader>ru :vsc Edit.RemoveUnusedUsings <return> :vsc Edit.SortUsings <return>
 
 
 "-------------------------------------------------------------------------------
@@ -19,6 +21,8 @@ noremap gh :vsc Edit.NavigateTo <return>
 noremap gs :vsc Window.SolutionExplorerSearch <return>
 noremap gu :vsc Edit.FindAllReferences<cr>
 noremap gp :vsc Edit.PeekDefinition<cr>
+noremap ge :vsc View.NextError<return>
+
 
 noremap <C-o> :vsc View.NavigateBackward <return>
 noremap <C-i> :vsc View.NavigateForward <return>
