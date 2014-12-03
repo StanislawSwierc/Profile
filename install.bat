@@ -24,3 +24,7 @@ mklink /D %USERPROFILE%\psfiles %USERPROFILEREPO%\psfiles
 rem posh-git installation
 mklink /D %USERPROFILE%\AppData\Local\posh-git %USERPROFILEREPO%\AppData\Local\posh-git
 powershell -File %USERPROFILE%\AppData\Local\posh-git\install.ps1
+
+rem Console2
+mklink /D %USERPROFILE%\AppData\Roaming\Console %USERPROFILEREPO%\AppData\Roaming\Console
+
