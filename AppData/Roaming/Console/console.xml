@@ -102,7 +102,16 @@
 		<tab title="powershell" use_default_icon="0">
 			<console shell="powershell.exe" init_dir="" run_as_user="0" user=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
+			<background type="0" r="1" g="26" b="63">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<tab title="apex" use_default_icon="0">
+			<console shell="%windir%\system32\cmd.exe /k init.cmd" init_dir="C:\Sources\VSO\src" run_as_user="0" user=""/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="24" g="7" b="29">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
