@@ -9,6 +9,9 @@ Import-Module "$env:USERPROFILE\AppData\Local\posh-git"
 function global:prompt {
     $realLASTEXITCODE = $LASTEXITCODE
 
+    # Do not show file status because it might be slow
+    $GitPromptSettings.EnableFileStatus = $false
+
     # Reset color, which can be messed up by Enable-GitColors
     $Host.UI.RawUI.ForegroundColor = $GitPromptSettings.DefaultForegroundColor
 
