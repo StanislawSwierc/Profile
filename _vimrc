@@ -177,6 +177,15 @@ autocmd FileType r setlocal softtabstop=2 shiftwidth=2 tabstop=2
 autocmd FileType vhd setlocal softtabstop=2 shiftwidth=2 tabstop=2
 
 
+"-------------------------------------------------------------------------------
+" File type selection
+"-------------------------------------------------------------------------------
+autocmd BufRead,BufNewFile *.xaml setfiletype xml
+autocmd BufRead,BufNewFile *.csproj setfiletype xml
+autocmd BufRead,BufNewFile *.proj setfiletype xml
+autocmd BufRead,BufNewFile *.props setfiletype xml
+autocmd BufRead,BufNewFile *.targes setfiletype xml
+
 
 "-------------------------------------------------------------------------------
 " Vundle
