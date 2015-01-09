@@ -234,3 +234,7 @@ filetype plugin on
 " plasticboy/vim-markdown
 " Disable folding at startup
 let g:vim_markdown_folding_disabled=1
+
+set makeprg=\"C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\ 14.0\VC\bin\nmake.exe\"
+
+
