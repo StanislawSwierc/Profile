@@ -26,6 +26,8 @@
 " Ctrl+Alt+O – View.Output
 " Ctrl+Alt+l – View.SolutionExplorer
 " Shift+Esc – Window.CloseToolWindow 
+noremap <A-.> :vsc ReSharper_AltEnter <return>
+
 noremap ,rt :vsc ReSharper.ReSharper_RefactorThis <return>
 noremap ,rr :vsc ReSharper.ReSharper_Rename <return>
 noremap ,rf :vsc ReSharper.ReSharper_IntroduceField <return>

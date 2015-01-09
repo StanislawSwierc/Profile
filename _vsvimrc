@@ -26,6 +26,8 @@ noremap K :vsc Help.F1Help <return>
 
 " Frequently used commands
 noremap ; A;<Esc>
+noremap <leader>; lbithis.<Esc>
+
 
 
 "-------------------------------------------------------------------------------
@@ -40,6 +42,7 @@ noremap - :vsc Edit.UncommentSelection <return>
 "-------------------------------------------------------------------------------
 " By default ViEmu supports formatting selection with '='
 noremap == :vsc Edit.FormatDocument <return>
+noremap <leader>ru :vsc Edit.RemoveAndSort <return>
 
 
 "-------------------------------------------------------------------------------

@@ -9,7 +9,6 @@ noremap <Leader>rr :vsc Refactor.Rename <return>
 noremap <Leader>rp :vsc Refactor.ReorderParameters <return>
 " Refactor this
 noremap <Leader>rt :vsc View.ShowRefactorings <return>
-noremap <Leader>ru :vsc Edit.RemoveUnusedUsings <return> :vsc Edit.SortUsings <return>
 
 
 "-------------------------------------------------------------------------------
